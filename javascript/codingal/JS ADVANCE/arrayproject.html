@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Array Mapping and Sorting</title>
+</head>
+<body>
+    <h2>Array Mapping and Sorting</h2>
+    <p id="numbers"></p>
+    <script>
+        const numbers = [5, 2, 9, 1, 5, 6];
+        document.getElementById("numbers").innerHTML = "Original Array: " + numbers;
+
+        // Mapping: Create a new array with each element squared
+        const squaredNumbers = numbers.map(num => num * num);
+        document.getElementById("numbers").innerHTML += "<br>Squared Array: " + squaredNumbers;
+
+        // Sorting: Sort the original array in ascending order
+        const sortedNumbers = [...numbers].sort((a, b) => a - b);
+        document.getElementById("numbers").innerHTML += "<br>Sorted Array: " + sortedNumbers;
+    </script>
+</body>
+</html>

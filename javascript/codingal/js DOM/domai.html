@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>DOM Manipulation Example</title>
+    </head>
+
+    <body>
+
+        <h2>DOM Manipulation Project</h2>
+
+        <button onclick="showTitle()">Show Page Title</button>
+
+        <p id="para1"></p>
+        <p id="para2"></p>
+
+        <script>
+
+            function showTitle() {
+
+                // Access the title node from DOM
+                var titleNode = document.getElementsByTagName("title")[0];
+
+                // Get the text from the title node
+                var titleText = titleNode.childNodes[0].nodeValue;
+
+                // Create new text nodes
+                var text1 = document.createTextNode(titleText);
+                var text2 = document.createTextNode(titleText);
+
+                // Select paragraphs
+                var p1 = document.getElementById("para1");
+                var p2 = document.getElementById("para2");
+
+                // Clear previous content
+                p1.innerHTML = "";
+                p2.innerHTML = "";
+
+                // Append text nodes
+                p1.appendChild(text1);
+                p2.appendChild(text2);
+            }
+
+        </script>
+
+    </body>
+
+</html>

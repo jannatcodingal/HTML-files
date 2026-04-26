@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagination</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h2>Pagination Example</h2>
+                <p>Fall in love with coding.</p>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="btn btn-success"
+                                href="https://r.search.yahoo.com/_ylt=AwrgwzzqtkZppssIG31XNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3Nj/RV=2/RE=1767451626/RO=10/RU=https%3a%2f%2fshopping.yahoo.com%2frdlw%3fproviderId%3dyahoo%26custData%3deyJsYW5kaW5nVXJsIjoiaHR0cHM6Ly93d3cuYW1hem9uLmNvbS8ifQ%26signature%3dAQAAAbBodKYZx2NA1JnyTZsVC1kpRnNNf5FqHQ6ZE52A0vL7%26siteId%3dus-search%26pageId%3dpc-dd-amazon%26featureId%3damazon%26affiliateRoutingRule%3dvampireV3%26clickFrom%3dyahoo%26spaceId%3d2766679%26uuid%3d235846e4-13b5-4f5a-9234-d573215b81cc%26viewId%3dvfc4gQrgwzyVOFy6aJ4GWTNPJyJ6WwF6hjMADx3o/RK=2/RS=9BMmhI1WiNuyXUZdL2HlQyThToM-">Amazon
+                                link</a></li>
+                        <li class="page-item"><a class="btn btn-warning"
+                                href="https://www.bing.com/ck/a?!&&p=1f98cc436cee5990415cd73cc790caff0f630a80fcfe6f982ef48e45e11adfd2JmltdHM9MTc2NjE4ODgwMA&ptn=3&ver=2&hsh=4&fclid=248105f0-4fd9-6a2e-06dc-13eb4ecd6b0e&psq=sapphire&u=a1aHR0cHM6Ly9way5zYXBwaGlyZW9ubGluZS5way8">Sapphire</a>
+                        </li>
+                        <li class="page-item"><a class="btn btn-danger"
+                                href="https://r.search.yahoo.com/rdclks/dWU9N244b3FiMWtrZGRyZSZ1dD0xNzY2MjQyMTU4OTM5JnVvPTczODczNzU0OTgwNzQ3Jmx0PTImcz0xJmVzPWUzSXhyYnFtMjJOZE5nZGE0eEFzREhRaVFtX3FRNk5JTGouTGxmd1VoYmthMXZkRlRmVDRnczc1YXN5MC5mVDY5dTVUelVqdjZKSUh6Vk0t/RV=2/RE=1768834159/RO=14/RU=https%3a%2f%2fwww.bing.com%2faclick%3fld%3de8JjTWf5zMsRLNJ4Nzq6GWbTVUCUyoOgKuk2b8LKvOEqd9-K9Tk_0KJWXS71G5Yn-XizAG92EnUFLHpvnJ5j_CLYaQKJ3wOhXz75Lz0-h9vbQ7VwclLM9PXSh9NRHhRTCeMA4Bd9okV96nytUuPHy7eG1OBqk42HmV_lEr2C1PWqWyNUZPG_u6HaZkFHPGntdjLmaM4EbqMAQaM6bCsiE7i2k_J9E%26u%3daHR0cHMlM2ElMmYlMmZ3d3cuc2hlaW4uY29tJTJmJTNmdXJsX2Zyb20lM2Rwa2JpbmdicmFuZHNoZWluX0xFTl9zcnNhXzIwMjQxMjA1JTI2cGYlM2RiaW5nJTI2a2V5d29yZCUzZFNIRUlOJTI2Y2lkJTNkNTY4OTkzNTk1JTI2c2V0aWQlM2QxMTgxOTc2ODAyMTk3MzA1JTI2YWRpZCUzZDczODczNzU0OTgwNzQ3JTI2dGFyZ2V0aWQlM2Rrd2QtNzM4NzM5MDc2NTc4MTQlM2Fsb2MtMTQ0JTI2bWF0Y2h0eXBlJTNkZSUyNm5ldHdvcmslM2RvJTI2bXNjbGtpZCUzZDZlM2M5NzlmOWY0NzE0ODFmZDJlZmVkOTI4Mjg5NmQ2JTI2b3JkZXJpdGVtaWQlM2Q3Mzg3MzkwNzY1NzgxNA%26rlid%3d6e3c979f9f471481fd2efed9282896d6/RK=2/RS=fOS3Bp8hDTRqfkHi4VEG01vi3Dk-;_ylt=AwrjfJdut0ZpX8AIfG1XNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA292LXRvcA--;_ylc=X3IDMgRydAMw?IG=0ae37c97d24a40f69302a7db0c68ea84">Shein</a>
+                        </li>
+                        <li class="page-item"><a class="btn btn-secondary"
+                                href="https://www.bing.com/ck/a?!&&p=903e7a7d2a9e5012f41979e779c6bc54eed4640d4b1c687c36b19110f266cbccJmltdHM9MTc2NjE4ODgwMA&ptn=3&ver=2&hsh=4&fclid=248105f0-4fd9-6a2e-06dc-13eb4ecd6b0e&psq=outfitters&u=a1aHR0cHM6Ly9vdXRmaXR0ZXJzLmNvbS5way8">Outfitters</a>
+                        </li>
+                        <li class="page-item"><a class="btn btn-primary"
+                                href="https://www.bing.com/ck/a?!&&p=dd9ac0adf3dbd7063a37e168375723fe029b906ed8c207b6f976121d9d988280JmltdHM9MTc2NjE4ODgwMA&ptn=3&ver=2&hsh=4&fclid=248105f0-4fd9-6a2e-06dc-13eb4ecd6b0e&psq=j.&u=a1aHR0cHM6Ly93d3cuanVuYWlkamFtc2hlZC5jb20v">Junaid
+                                Jamshed</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON and Asynchronous Programming</title>
+</head>
+<body>
+    <h2>Convert a javascript object in a string, and send it to the server.</h2>
+    <p id="result"></p>
+    <script>
+        var myObj = {
+            name: "Riya",
+            age: 12,
+            grade: 7
+        };
+        var myJSON = JSON.stringify(myObj);
+        var newObj = JSON.parse(myJSON);
+        document.getElementById("result").innerHTML = newObj.name + " is " + newObj.age + " years old and in grade " + newObj.grade + ".";
+       
+        
+    </script>
+</body>
+</html>

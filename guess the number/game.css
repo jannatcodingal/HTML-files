@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color:pink;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 20px;
+   
+}
+
+.container {
+    padding: 20px;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    margin: auto;
+    box-shadow: inset;
+    opacity: 20px;
+    box-shadow: 10px 10px lightcoral;
+
+}
+#guessInput {
+    padding: 8px;
+    width: 60px;
+    text-align: center;
+    border-radius: 20px;
+
+
+}
+
+button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 10px 10px lightcoral;
+    opacity: 20px;
+}
+
+.message {
+    margin-top: 15px;
+    font-weight: bold;
+}

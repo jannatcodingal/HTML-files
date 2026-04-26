@@ -1,0 +1,1 @@
+const URL = "https://cdn.jsdelivr.net/gh/fawazahmed0/quran-api@1/editions.min.json";

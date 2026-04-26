@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Error Handling</title>
+</head>
+<body>
+    <h2>Error Handling</h2>
+    <p id="error-message"></p>
+    <script>
+        try {
+            // Code that might throw an error
+            const result = 10 / 0;
+            if (!isFinite(result)) {
+                throw new Error("Result is not a finite number");
+            }
+            document.getElementById("error-message").innerHTML = "Result: " + result;
+        } catch (error) {
+            document.getElementById("error-message").innerHTML = "Error: " + error.message;
+        }
+    </script>
+</body>
+</html>

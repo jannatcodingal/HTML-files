@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array project</title>
+    </head>
+
+    <body>
+        <h2>Array Mthods and Objects</h2>
+        <P id="cars">Here is info about the latest cars.</P>
+
+        <script>
+            const cars = [
+                "BMW",
+                "porsche",
+                "Audi",
+                "Bentley"
+            ]
+
+            document.getElementById("cars").innerHTML = cars[2];
+            document.getElementById("cars").innerHTML = cars[1];
+
+            //array methods
+            document.getElementById("cars").innerHTML = cars.join("*")
+            document.getElementById("cars").innerHTML = cars.toString();
+
+
+
+
+
+
+        </script>
+    </body>
+
+</html>

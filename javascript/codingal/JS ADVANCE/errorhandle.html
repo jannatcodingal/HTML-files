@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Error Handling</title>
+    </head>
+
+    <body>
+        <P>This example demonstrates hoew to use <B>catch</B> to find an error.</P>
+        <P id="error_message"></P>
+        <script>
+            try {
+                addalert("Welcome guest!");
+            }
+            catch (err) {
+                document.getElementById("error_message").innerHTML = err.message;
+            }
+
+        </script>
+    </body>
+
+</html>
